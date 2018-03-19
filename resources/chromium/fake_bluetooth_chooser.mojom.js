@@ -535,10 +535,10 @@
     encoder.writeUint32(FakeBluetoothChooser_Rescan_ResponseParams.encodedSize);
     encoder.writeUint32(0);
   };
-  var kFakeBluetoothChooser_WaitForEvents_Name = 457051710;
-  var kFakeBluetoothChooser_SelectPeripheral_Name = 1924310743;
-  var kFakeBluetoothChooser_Cancel_Name = 1388880682;
-  var kFakeBluetoothChooser_Rescan_Name = 2112671529;
+  var kFakeBluetoothChooser_WaitForEvents_Name = 1398269023;
+  var kFakeBluetoothChooser_SelectPeripheral_Name = 1225584822;
+  var kFakeBluetoothChooser_Cancel_Name = 1989320438;
+  var kFakeBluetoothChooser_Rescan_Name = 1289184126;
 
   function FakeBluetoothChooserPtr(handleOrPtrInfo) {
     this.ptr = new bindings.InterfacePtrController(FakeBluetoothChooser,

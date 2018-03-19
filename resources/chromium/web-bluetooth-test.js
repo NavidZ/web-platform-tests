@@ -455,6 +455,18 @@ class FakeChooser {
     Mojo.bindInterface(content.mojom.FakeBluetoothChooser.name,
         mojo.makeRequest(this.fake_bluetooth_chooser_ptr_).handle, 'process');
   }
+
+  async selectPeripheral(peripheral) {
+    await this.fake_bluetooth_chooser_ptr_.selectPeripheral(peripheral.address);
+  }
+
+  async cancel() {
+    await this.fake_bluetooth_chooser_ptr_.cancel();
+  }
+
+  async rescan() {
+    await this.fake_bluetooth_chooser_ptr_.rescan();
+  }
 }
 
 // If this line fails, it means that current environment does not support the
